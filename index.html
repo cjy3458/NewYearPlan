@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2023년 내가 이룰 버킷리스트</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Stylish&display=swap");
+      * {
+        font-family: "Dongle", sans-serif;
+        font-family: "Stylish", sans-serif;
+      }
+      html {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bucket {
+          background-size: cover;
+          background-position: center;
+          margin: 8px;
+          position: relative;
+
+          
+          font-weight: bold;
+          font-size: 16px;
+          text-align: center;
+          word-break: keep-all;
+      }
+
+      .flex-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+      }
+      .center {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+      .done::after {    
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-image: url("goodjob.png");
+          background-size: contain;
+          background-position: center;
+          position: absolute;
+          top: 20%;
+          opacity: 0.7;
+      }
+      .wrap {
+          flex-wrap: wrap;
+      }
+      .msg {
+          margin: -10px 0 30px;
+          color: black;
+      }
+
+      .img1-t2 {
+          background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-blue.png");
+          color: white;
+      }
+      .img2-t2 {
+          background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightblue.png");
+          color: blue;
+      }
+      .hidden {
+          visibility: hidden;
+      }
+      .title {
+        color: white;
+        background-color: lightskyblue;
+        font-size: 24px;
+        padding: 8px 16px;
+        border-radius: 8px;
+      }
+
+      .bg {
+        width: 360px;
+      }
+
+      .bg::after{
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-image: url("bg.png");
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.8;
+      }
+
+      .msg {
+        font-weight: bold;
+      }
+
+      .bucket {
+        width: 160px;
+        height: 160px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      
+    />
+  </head>
+
+  <body class="bg center">
+    <h1 class="title">2023년 신년계획</h1>
+    <p class="msg">매년 지키지못할 다짐은 NO!</p>
+    <div class="row flex-row wrap">
+      <div class="bucket img1-t2 center">들어가고싶은 곳에 합격하기</div>
+      <div class="bucket img2-t2 center done">웹 서비스 제작하기</div>
+      <div class="bucket img2-t2 center">운동하기..?</div>
+      <div class="bucket img1-t2 center">영어 공부하기</div>
+      <div class="bucket img1-t2 center done">금연하기</div>
+      <div class="bucket img2-t2 center">휴학하고 하고싶은거 해보기</div>
+    </div>
+  </body>
+</html>
